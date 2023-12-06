@@ -1,13 +1,3 @@
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: PT (Portuguese; português)
@@ -85,5 +75,3 @@ $.extend( $.validator.messages, {
 	cpfBR: "Por favor, forne&ccedil;a um CPF v&aacute;lido.",
 	nisBR: "Por favor, forne&ccedil;a um NIS/PIS v&aacute;lido"
 } );
-return $;
-}));
